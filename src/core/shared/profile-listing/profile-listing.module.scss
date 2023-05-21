@@ -1,0 +1,72 @@
+@import "../../../assets/styles/colors";
+
+.listing {
+  padding: 25px 0;
+  border-top: 1px solid $gray-border;
+
+  &__categoryBadge {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: white;
+    background-color: $link;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &__edit {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $gray-main;
+    cursor: pointer;
+  }
+
+  &__imgList {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+  }
+
+  &__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      min-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__imgCol {
+    width: 330px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+    margin-left: 20px;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__imgCount {
+    color: $gray-border;
+    font-size: 22px;
+    white-space: nowrap;
+  }
+
+}

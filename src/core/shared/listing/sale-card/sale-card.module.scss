@@ -1,0 +1,180 @@
+@import "../../../../assets/styles/colors";
+
+.card {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  display: block;
+  border: 1px solid $sale-card-border;
+
+  &__mileage{
+    position: absolute;
+    background: rgba(48, 56, 68, 0.6);
+    color: white;
+    border-radius: 6px;
+    top: 16px;
+    left: 16px;
+    font-weight: 400;
+    @media only screen and (max-width: 576px){
+      top: 10px;
+      left: 10px;
+      font-size: 10px!important;
+      padding: 6px!important;
+    }
+  }
+  &__image {
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 576px){
+      height: 170px;
+    }
+
+    img {
+      width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__details {
+    position: relative;
+    @media only screen and (max-width: 576px){
+      padding: 10px!important;
+    }
+  }
+
+  &__price {
+    line-height: 22px;
+    @media only screen and (max-width: 576px){
+      font-size: 14px;
+      margin-bottom: 6px!important;
+      line-height: 16px;
+    }
+  }
+
+  &__name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 19px;
+    @media only screen and (max-width: 576px){
+      font-size: 10px;
+      margin-bottom: 6px!important;
+      line-height: 12px;
+    }
+  }
+
+  &__date {
+    line-height: 17px;
+    @media only screen and (max-width: 576px){
+      font-size: 9px;
+      //margin-bottom: 6px!important;
+      line-height: 11px;
+    }
+  }
+  &__fav{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 16px;
+    top: -20px;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $gray-main;
+    font-size: 18px;
+    @media only screen and (max-width: 576px){
+      width: 24px;
+      height: 24px;
+      font-size: 11px;
+      top: -12px;
+    }
+  }
+
+  &__favGreen{
+    color: $green-main;
+  }
+
+}
+
+.cardVertical{
+  display: flex;
+  width: 600px;
+  max-width: 100%;
+  @media only screen and (max-width: 576px){
+    width: 336px;
+  }
+  &__mileage{
+    @media only screen and (max-width: 576px){
+    }
+  }
+  &__image {
+    width: 50%;
+    @media only screen and (max-width: 576px){
+    }
+
+    img {
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px!important;
+    width: 50%;
+    @media only screen and (max-width: 576px){
+      padding-left: 16px!important;
+    }
+  }
+
+  &__price {
+    @media only screen and (max-width: 576px){
+      font-size: 16px;
+      margin-bottom: 6px!important;
+      line-height: 18px;
+    }
+  }
+
+  &__name {
+
+    @media only screen and (max-width: 576px){
+      font-size: 12px;
+      margin-bottom: 6px!important;
+      line-height: 14px;
+    }
+  }
+
+  &__date {
+
+    @media only screen and (max-width: 576px){
+      font-size: 10px;
+      //margin-bottom: 6px!important;
+      line-height: 12px;
+    }
+  }
+  &__fav{
+
+    @media only screen and (max-width: 576px){
+
+    }
+  }
+}
+
+.cardLink{
+  margin-right: 30px;
+  @media only screen and (max-width: 576px){
+    margin-right: 10px;
+  }
+}

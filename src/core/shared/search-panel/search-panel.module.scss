@@ -1,0 +1,35 @@
+.searchPanel{
+  box-shadow: 0 24px 35px rgba(0, 0, 0, 0.09);
+  background-color: white;
+  border-radius: 0 6px 6px 6px;
+  &__inputWrapper{
+    @media only screen and (max-width: 576px){
+      margin-bottom: 10px!important;
+      padding-right: 5px!important;
+      padding-left: 5px!important;
+    }
+  }
+  &__invisibleInputs{
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease 0.3s;
+  }
+  &__invisibleInputsActive{
+    overflow: visible;
+    max-height: 800px;
+    @media only screen and (max-width: 768px){
+      max-height: 1100px;
+    }
+    //padding-top: 30px;
+  }
+  &__mainCheckboxes{
+    @media only screen and (max-width: 576px) {
+      margin-top: 30px;
+    }
+  }
+  &__expandBtn{
+    @media only screen and (max-width: 768px){
+      margin-bottom: 30px;
+    }
+  }
+}

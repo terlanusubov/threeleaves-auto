@@ -1,0 +1,56 @@
+@import "../../../assets/styles/colors";
+.card{
+  border-radius: 6px;
+  border: 2px solid $price-card-red;
+  &__count{
+    line-height: 41px;
+    font-size: 34px;
+  }
+  &__countRed{
+    color: $price-card-red;
+  }
+  &__countBlue{
+    color: $price-card-blue;
+  }
+  &__countGreen{
+    color: $price-card-green;
+  }
+  button{
+    background-color: $price-card-red;
+    color: white;
+  }
+  a{
+    line-height: 25px;
+  }
+}
+
+.cardRed{
+  border-color: $price-card-red;
+  &__count{
+    color: $price-card-red;
+  }
+  button{
+    background-color: $price-card-red;
+    color: white;
+  }
+}
+.cardBlue{
+  border-color: $price-card-blue;
+  &__count{
+    color: $price-card-blue;
+  }
+  button{
+    background-color: $price-card-blue;
+    color: white;
+  }
+}
+.cardGreen{
+  border-color: $price-card-green;
+  &__count{
+    color: $price-card-green;
+  }
+  button{
+    background-color: $price-card-green;
+    color: white;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../assets/styles/colors";
+.slidingRadio{
+  position: relative;
+  border: 1px solid $gray-border;
+  border-radius: 6px;
+  background-color: $sliding-radio-bg;
+
+  &__item{
+    text-align: center;
+    cursor: pointer;
+    color: $gray-main;
+    line-height: 17px;
+  }
+  &__activeItem{
+    background-color: $sliding-radio-active;
+    border-radius: 6px;
+    p{
+      color: $black-main;
+    }
+  }
+  &__slider{
+    position: absolute;
+  }
+
+}

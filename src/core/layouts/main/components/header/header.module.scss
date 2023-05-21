@@ -1,0 +1,249 @@
+@import "../../../../../assets/styles/colors";
+
+.header {
+  //position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 9;
+  position: relative;
+
+  &__avatar {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 7px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      min-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__notCount{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $red-main;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-family: Gotham-medium, sans-serif !important;
+    font-weight: 500;
+    top: -8px;
+    right: -2px;
+    z-index: 4;
+  }
+  &__logo {
+    width: 100%;
+    display: block;
+    @media only screen and (max-width: 992px) {
+      padding: 20px 10px 13px;
+      width: auto;
+    }
+    @media only screen and (max-width: 576px) {
+      max-width: 165px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__mobileMain {
+    align-items: flex-end;
+    @media only screen and (max-width: 992px) {
+      align-items: center !important;
+    }
+  }
+
+  &__logoWrapper {
+    @media only screen and (max-width: 992px) {
+      align-items: center !important;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__top {
+    display: flex;
+    @media only screen and (max-width: 992px) {
+      display: none !important;
+    }
+
+    &__currentService {
+      font-size: 14px;
+      color: $gray-main;
+      @media only screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+
+    &__lang {
+
+    }
+
+    &__langMobile {
+      display: none;
+      @media only screen and (max-width: 992px) {
+        display: block;
+        width: 20%;
+      }
+    }
+
+    &__userActions {
+      color: $gray-main;
+
+      span {
+        color: $gray-main;
+        font-size: 14px;
+        //white-space: nowrap;
+        @media only screen and (max-width: 1290px) {
+          font-size: 12px;
+        }
+
+        svg {
+          @media only screen and (max-width: 1290px) {
+            margin-right: 5px !important;
+          }
+        }
+      }
+    }
+  }
+
+  &__searchbarWrapper {
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__mobileSearchbarWrapper {
+    display: none;
+    @media only screen and (max-width: 992px) {
+      display: block;
+    }
+  }
+
+  &__city {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    &__title {
+      color: $gray-main;
+    }
+
+    &__current {
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 11px;
+
+      img {
+        width: 100%;
+      }
+      @media only screen and (max-width: 992px) {
+        width: 9px;
+      }
+    }
+
+    &__name {
+      text-decoration: underline;
+      @media only screen and (max-width: 992px) {
+        font-size: 11px;
+      }
+    }
+
+  }
+
+  &__cityMobile {
+    display: none;
+    @media only screen and (max-width: 992px) {
+      display: inline-block;
+
+      width: 20%;
+    }
+  }
+
+  &__serviceList {
+    justify-content: space-between;
+    @media only screen and (max-width: 992px) {
+      justify-content: center !important;
+    }
+
+    &__item {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    a {
+      //flex-grow: 1;
+      //flex-shrink: 0;
+    }
+
+    span {
+      //width: 100%;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background-color: $gray-main;
+        transform: rotate(45deg);
+        right: -21px;
+        position: absolute;
+        @media only screen and (max-width: 1290px) {
+          display: none;
+        }
+        @media only screen and (max-width: 992px) {
+          display: block;
+          right: -12px;
+        }
+
+      }
+
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: 1290px) {
+        font-size: 12px;
+      }
+    }
+
+  }
+
+  &__serviceListActive {
+    font-weight: 500;
+    color: $green-main !important;
+  }
+
+  &__mobileNav {
+    display: none;
+    @media only screen and (max-width: 992px) {
+      display: block;
+    }
+
+    &__item {
+      flex-grow: 1;
+      padding: 5px 10px;
+      text-align: center;
+      border-right: 1px solid $gray-border;
+      @media only screen and (max-width: 576px) {
+        font-size: 12px !important;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1290px) {
+
+}

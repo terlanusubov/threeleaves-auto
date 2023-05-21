@@ -1,0 +1,28 @@
+.urgent{
+  box-shadow: 0 24px 35px rgba(0, 0, 0, 0.09);
+border-radius: 6px;
+  &__arrow{
+    position: absolute;
+    top: 45%;
+    right: -16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 1px lightgrey;
+    border: none;
+    z-index: 2;
+  }
+  &__arrowPrev{
+    left: -16px;
+    transform: rotate(180deg);
+  }
+}
+
+.urgentVertical{
+  max-width: 100%;
+  overflow-x: auto;
+}

@@ -1,0 +1,24 @@
+@import "../../../assets/styles/colors";
+
+.goBack {
+  cursor: pointer!important;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  &__icon {
+    display: flex;
+    align-items: center;
+    width: 22px;
+    margin-right: 14px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  span {
+    color: $black-main;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

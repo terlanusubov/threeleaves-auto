@@ -1,0 +1,37 @@
+@import "../../../src/assets/styles/colors";
+
+.brand{
+  &__item{
+    width: 20%;
+    cursor: pointer;
+    &__icon{
+      width: 34px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+    @media only screen and (max-width: 1290px) {
+    }
+    @media only screen and (max-width: 992px) {
+      width: 25%;
+    }
+    @media only screen and (max-width: 768px) {
+      span{
+        font-size: 14px!important;
+      }
+        width: 33.33333333333333%;
+    }
+    @media only screen and (max-width: 576px) {
+      span{
+        font-size: 14px!important;
+      }
+      width: 50%;
+    }
+  }
+}

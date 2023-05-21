@@ -1,0 +1,59 @@
+@import "~light-grid/partials/abstract";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  z-index: 19;
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__panel {
+    --animate-duration: 0.5s;
+    padding: 30px 35px 50px 35px;
+    width: 478px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 24px 35px rgba(0, 0, 0, 0.09);
+  }
+
+  &__close{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  }
+
+  &__panelSmall {
+    width: 350px;
+  }
+
+  &__panelLarge {
+    width: 910px;
+  }
+  &__panelMedium {
+    width: 700px;
+  }
+
+
+  &__title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 27px;
+    font-size: 22px;
+  }
+
+  &__body {
+
+  }
+}
+
+.modalVisible {
+
+}

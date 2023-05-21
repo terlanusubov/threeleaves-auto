@@ -1,0 +1,60 @@
+@import "../src/assets/styles/colors";
+.home {
+  position: relative;
+  &__searchPanelTitle {
+    border-radius: 6px 6px 0 0;
+    background-color: white;
+    display: inline-block;
+  }
+  &__businessBadge{
+    font-size: 14px;
+    padding: 8px 14px;
+    background-color: $gray-main;
+    color: white;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  &__sectionHead {
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__tagsWrapper {
+    flex-wrap: wrap;
+    @media only screen and (max-width: 768px) {
+      flex-wrap: nowrap;
+      margin-bottom: 24px;
+      overflow-x: auto;
+    }
+  }
+  &__saleWrapper{
+    @media only screen and (max-width: 576px){
+      padding: 0 5px;
+      margin-bottom: 10px!important;
+    }
+  }
+  &__sortWrapper{
+    width: 215px;
+    margin-left: 16px;
+    @media only screen and (max-width: 768px) {
+      margin-left: 0!important;
+    }
+      @media only screen and (max-width: 576px){
+      width: 130px;
+    }
+  }
+  &__agencyCover{
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+}
+.homeActive{
+  @media only screen and (max-width: 992px) {
+  }
+  @media only screen and (max-width: 576px) {
+  }
+}

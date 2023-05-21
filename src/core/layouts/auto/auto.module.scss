@@ -1,0 +1,59 @@
+@import "../../../assets/styles/colors";
+
+.auto {
+  &__avatar {
+    width: 45px;
+    height: 45px;
+    border: 1px solid $green-main;
+    border-radius: 50%;
+    margin-right: 15px;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__menuItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  &__menuItemIcon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $gray-soft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
+
+
+  }
+  &__menuActive{
+    span{
+      color : $green-main;
+      font-weight: bold;
+    }
+    .profile{
+      &__menuItemIcon{
+        background-color: $green-main;
+      }
+    }
+  }
+  &__menuItemFa{
+    color: $gray-main;
+    font-size: 20px;
+  }
+  &__menuItemFaActive{
+    color: white;
+    font-size: 20px;
+  }
+  &__menuItemTxt{
+    color: $gray-main;
+  }
+}

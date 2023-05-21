@@ -1,0 +1,30 @@
+@import "../../../src/assets/styles/colors";
+.model {
+  &__list{
+    z-index: 1;
+    &__group{
+      @media only screen and (max-width: 768px) {
+          font-size: 18px!important;
+      }
+    }
+    &__item{
+      z-index: 1;
+      @media only screen and (max-width: 768px) {
+          font-size: 14px!important;
+      }
+    }
+
+  }
+  &__icon{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../assets/styles/colors";
+.social{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  &__icon{
+    font-size: 18px;
+  }
+}
+.fb{
+  background-color: $fb-bg;
+}
+
+.wp{
+  background-color: $wp-bg;
+}
+.yt{
+  background-color: $yt-bg;
+}
+.ig{
+  background-color: $ig-bg;
+}
+.tl{
+  background-color: $tl-bg;
+}
+

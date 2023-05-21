@@ -1,0 +1,23 @@
+@import "../../../../src/assets/styles/colors";
+.table{
+  width: 100%;
+  th{
+    //width: calc(100% / 5);
+    width: 22%;
+    text-align: left;
+    color: $gray-main;
+    padding: 15px 5px;
+    @media only screen and (max-width: 768px) {
+      font-size: 10px;
+      width: 21%;
+
+    }
+  }
+  td{
+    font-size: 14px;
+    padding: 10px 5px;
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}

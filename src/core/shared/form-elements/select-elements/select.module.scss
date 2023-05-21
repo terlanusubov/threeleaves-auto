@@ -1,0 +1,205 @@
+@import "../../../../assets/styles/colors";
+
+.select {
+  padding: 10px 10px 10px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer !important;
+
+  &__container {
+    position: relative;
+    line-height: 19px;
+    width: 100%;
+    flex-direction: column;
+    height: 37px;
+    justify-content: space-between;
+  }
+
+  &__placeholder {
+    transition: all 0.2s;
+  }
+
+  &__placeholderActive {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  &__value {
+    color: $black-main;
+    @media only screen and (max-width: 576px) {
+      font-size: 13px;
+    }
+  }
+
+  &__arrow {
+    top: 7px;
+    right: 10px;
+    width: 10px;
+    position: absolute;
+  }
+
+  &__optionsList {
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    background-color: white;
+    position: absolute;
+    max-height: 0;
+    width: calc(100% + 4px);
+    left: 0;
+    top: calc(100% + 8px);
+    transition: all ease-in 0.2s;
+    overflow: hidden;
+    padding: 0 20px;
+    z-index: 3;
+
+
+    &::-webkit-scrollbar {
+
+      width: 25px;
+      padding: 10px;
+      height: calc(100% - 20px)
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $gray-border;
+      border-left: 11px solid white;
+      border-right: 11px solid white;
+      border-bottom: 10px solid white;
+      border-top: 10px solid white;
+      border-radius: 8px;
+    }
+
+    ::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $green-main;
+      border-left: 10px solid white;
+      border-right: 10px solid white;
+      border-radius: 8px;
+      width: 5px;
+      background-clip: padding-box;
+    }
+
+    &::-webkit-scrollbar-track-piece:end {
+      background: transparent;
+      margin-bottom: 10px;
+    }
+
+    &::-webkit-scrollbar-track-piece:start {
+      background: transparent;
+      margin-top: 10px;
+    }
+  }
+
+  &__optionsListUp {
+    bottom: calc(100% + 8px);
+    top: auto;
+  }
+
+  &__optionsListExtended {
+    width: calc(200% + 34px) !important;
+    @media only screen and (max-width: 1200px) {
+      width: calc(100% + 4px) !important;
+    }
+  }
+
+  &__option {
+    padding: 11px 0;
+    font-size: 14px;
+  }
+
+  &__reset {
+    margin-left: 60px;
+    @media only screen and (max-width: 1200px) {
+      margin-left: 0;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+
+  }
+
+  &__modelGroup {
+    @media only screen and (max-width: 992px) {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__extended {
+    &__optionsHead {
+      @media only screen and (max-width: 1200px) {
+        justify-content: space-between;
+      }
+      @media only screen and (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__optionActive {
+    color: $green-main;
+  }
+
+  &__optionsActive {
+    max-height: 365px;
+    overflow: auto;
+    padding: 10px 20px;
+  }
+
+  &__optionsExtendedActive {
+    max-height: 512px;
+    overflow: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__colorTag {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $black-main;
+    border: 1px solid $gray-border;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+}
+
+.selectDisabled {
+  pointer-events: none !important;
+  opacity: 0.7;
+
+}
+
+
+.doubleSelectItem {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.selectActive {
+  box-shadow: 0 0 0 1px $green-main;
+  border-color: transparent;
+}
+
+
+// COLORS
+.white {
+  background-color: white;
+}
+
+.gray {
+  background-color: $backdrop-gray;
+}
+
+
+// SIZES
+.lg {
+
+}
+
+

@@ -1,0 +1,5 @@
+export const DealershipTypes = {
+    GET_AGENCIES : 'GET_AGENCIES',
+    GET_AGENCY_LISTINGS : 'GET_AGENCY_LISTINGS',
+    RESET_DEALERS : 'RESET_DEALERS'
+}

@@ -1,0 +1,30 @@
+@import "../../../../src/assets/styles/colors";
+.finish {
+  &__priceLabel {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  &__currencySelectWrapper {
+    width: 85px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__currencySelect {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 26px;
+    font-weight: bold;
+    @media only screen and (max-width: 992px){
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    p{
+      color: $gray-main!important;
+    }
+  }
+}

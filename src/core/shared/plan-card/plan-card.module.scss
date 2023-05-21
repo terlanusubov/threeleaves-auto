@@ -1,0 +1,112 @@
+@import "../../../assets/styles/colors";
+
+.card {
+  border-radius: 6px;
+  border: 2px solid $price-card-red;
+  &__name{
+    @media only screen and (max-width: 768px) {
+      font-size: 16px!important;
+    }
+  }
+  &__desc{
+    @media only screen and (max-width: 768px) {
+      font-size: 12px!important;
+    }
+  }
+  &__count {
+    line-height: 41px;
+    font-size: 34px;
+  }
+
+  &__countRed {
+    color: $price-card-red;
+  }
+
+  &__countBlue {
+    color: $price-card-blue;
+  }
+
+  &__countWhite {
+    color: black;
+  }
+
+  &__countGreen {
+    color: $price-card-green;
+  }
+
+  button {
+    background-color: $price-card-red;
+    color: white;
+  }
+
+  a {
+    line-height: 25px;
+  }
+}
+
+.cardRed {
+  border-color: $price-card-red;
+
+  &__count {
+    color: $price-card-red;
+  }
+
+  button {
+    background-color: $price-card-red;
+    color: white;
+  }
+
+  .card__name {
+    color: $red-main;
+  }
+}
+
+.cardBlue {
+  border-color: $price-card-blue;
+
+  &__count {
+    color: $price-card-blue;
+  }
+
+  button {
+    background-color: $price-card-blue;
+    color: white;
+  }
+  .card__name {
+    color: $link;
+  }
+}
+
+.cardGreen {
+  border-color: $price-card-green;
+
+  &__count {
+    color: $price-card-green;
+  }
+
+  button {
+    background-color: $price-card-green;
+    color: white;
+  }
+  .card__name {
+    color: $green-main;
+  }
+}
+
+.cardWhite {
+  border-color: white;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.09);
+
+  &__count {
+    color: black;
+  }
+
+  button {
+    background-color: white;
+    border: 1px solid $gray-main;
+    color: $gray-main;
+  }
+  .card__name {
+    color: black;
+  }
+}

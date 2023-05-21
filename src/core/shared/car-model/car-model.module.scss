@@ -1,0 +1,13 @@
+@import "../../../assets/styles/colors";
+
+.model{
+  &__orange{
+    fill : $car-model-orange
+  }
+  &__green{
+    fill : $green-main
+  }
+  &__red{
+    fill: $red-main;
+  }
+}

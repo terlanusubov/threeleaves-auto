@@ -1,0 +1,33 @@
+@import "../../../assets/styles/colors";
+.wrapper {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  background-color: white;
+  @media only screen and (max-width: 992px) {
+    display: block;
+  }
+  z-index:5;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  &__item{
+    padding: 16px;
+    border-radius: 6px 6px 0px 0px;
+    cursor: pointer!important;
+  }
+  &__itemActive{
+    border-radius: 6px 6px 0px 0px;
+    background-color: $green-main;
+    svg{
+      path{
+        fill: white;
+      }
+    }
+  }
+}
+

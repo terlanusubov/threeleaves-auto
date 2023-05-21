@@ -1,0 +1,41 @@
+@import "../../../../assets/styles/colors";
+
+.lineSelect {
+  position: relative;
+  border: 1px solid $gray-border;
+  border-radius: 6px;
+  background-color: $sliding-radio-bg;
+  display: inline-block;
+
+  &__item {
+    text-align: center;
+    cursor: pointer;
+    color: $gray-main;
+    line-height: 17px;
+    //cursor: pointer;
+    @media only screen and (max-width: 992px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__activeItem {
+    background-color: $green-main;
+    border-radius: 6px;
+
+    p {
+      color: white;
+    }
+  }
+
+  &__slider {
+    position: absolute;
+  }
+  &__more{
+    @media only screen and (max-width: 992px) {
+      font-size: 12px;
+      padding: 15px 0;
+    }
+  }
+
+}

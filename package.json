@@ -1,0 +1,48 @@
+{
+  "name": "auto.3yarpaq.az-front",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3003",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lezqo": "json-server -p 4000 -w fakeAPI/data.json"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "animate.css": "^4.1.1",
+    "axios": "^0.24.0",
+    "cookie": "^0.5.0",
+    "light-grid": "^1.1.2",
+    "lodash.debounce": "^4.0.8",
+    "next": "12.0.4",
+    "next-auth": "3.29.3",
+    "node-geocoder": "^4.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-input-mask": "^2.0.4",
+    "react-quill": "^2.0.0",
+    "react-redux": "^7.2.6",
+    "react-slick": "^0.28.1",
+    "react-toastify": "^9.0.1",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "rxjs": "^7.4.0",
+    "sass": "^1.56.1",
+    "slick-carousel": "^1.8.1",
+    "string-mask": "^0.3.0",
+    "sweetalert2": "^11.4.14",
+    "swiper": "^8.2.2",
+    "swr": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4",
+    "json-server": "^0.17.0"
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../../assets/styles/colors";
+.grayBackdrop{
+  position: absolute;
+  width: 100%;
+  background-color: $backdrop-gray;
+  height: 300px;
+  top: 0;
+  z-index: -1;
+}

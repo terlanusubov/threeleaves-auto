@@ -1,0 +1,67 @@
+@import 'light-grid/index.scss';
+
+@mixin padding-md($count) {
+  @media only screen and (max-width: 992px) {
+  @for $i from 0 through $count {
+    .pt-md-#{$i} {
+      padding-top: space($i) !important;
+    }
+    .pb-md-#{$i} {
+      padding-bottom: space($i) !important;
+    }
+    .pr-md-#{$i} {
+      padding-right: space($i) !important;
+    }
+    .pl-md-#{$i} {
+      padding-left: space($i) !important;
+    }
+    .px-md-#{$i} {
+      padding-left: space($i) !important;
+      padding-right: space($i) !important;
+    }
+    .py-md-#{$i} {
+      padding-top: space($i) !important;
+      padding-bottom: space($i) !important;
+    }
+    .p-md-#{$i} {
+      padding: space($i) !important;
+    }
+  }
+}
+}
+@mixin margin-md($count) {
+  @media only screen and (max-width: 992px) {
+    @for $i from 0 through $count {
+      .mt-md-#{$i} {
+        margin-top: space($i) !important;
+      }
+      .mb-md-#{$i} {
+        margin-bottom: space($i) !important;
+      }
+      .mr-md-#{$i} {
+        margin-right: space($i) !important;
+      }
+      .ml-md-#{$i} {
+        margin-left: space($i) !important;
+      }
+      .mx-md-#{$i} {
+        margin-left: space($i) !important;
+        margin-right: space($i) !important;
+      }
+      .my-md-#{$i} {
+        margin-top: space($i) !important;
+        margin-bottom: space($i) !important;
+      }
+      .m-md-#{$i} {
+        margin: space($i) !important;
+      }
+    }
+  }
+}
+@mixin gap($count) {
+    @for $i from 0 through $count {
+      .gap-#{$i} {
+        gap: space($i) !important;
+      }
+    }
+}
