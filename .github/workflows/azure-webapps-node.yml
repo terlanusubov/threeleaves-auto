@@ -48,12 +48,22 @@ jobs:
         npm run build --if-present
         npm run test --if-present
 
-    - name: Upload artifact for deployment job
-      uses: actions/upload-artifact@v3
-      with:
-        name: node-app
-        path: .
+#     - name: Upload artifact for deployment job
+#       uses: actions/upload-artifact@v3
+#       with:
+#         name: node-app
+#         path: .
         
+        
+#     - name: Cache
+#       uses: actions/cache@v1.2.1
+#       with:
+#     # A directory to store and save the cache
+#     path: 
+#     # An explicit key for restoring and saving the cache
+#     key: 
+#     # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
+#     restore-keys: # optional    
         
 
   deploy:
@@ -66,10 +76,10 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-    - name: Download artifact from build job
-      uses: actions/download-artifact@v3
-      with:
-        name: node-app
+#     - name: Download artifact from build job
+#       uses: actions/download-artifact@v3
+#       with:
+#         name: node-app
 
     - name: 'Deploy to Azure WebApp'
       id: deploy-to-webapp
